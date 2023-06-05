@@ -1,0 +1,16 @@
+dataset: chemdner_patents_cdp
+templates:
+  56bd12a8-b8ee-464e-98cc-5f586ba9f74d: !Template
+    answer_choices: No ||| Yes
+    id: 56bd12a8-b8ee-464e-98cc-5f586ba9f74d
+    jinja: 'Please answer the below Yes / No question.
+
+
+      Is "{{abstract}}"  contain chemical entities/positive hits? ||| {{answer_choices[label]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: binary-classification
+    reference: ''

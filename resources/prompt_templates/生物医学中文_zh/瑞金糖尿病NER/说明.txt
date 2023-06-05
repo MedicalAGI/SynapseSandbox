@@ -1,0 +1,2 @@
+﻿ner数据18种 'Disease', 'Class', 'Test_items', 'Test_Value', 'Level', 'Anatomy', 'Reason', 'Treatment', 'Symptom', 'Drug', 'ADE', 'Pathogenesis', 'Amount', 'Operation', 'Method', 'Frequency', 'Test', 'Duration'实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成18个的tokens,label的数据

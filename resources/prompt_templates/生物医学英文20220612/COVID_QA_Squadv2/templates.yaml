@@ -1,0 +1,17 @@
+dataset: COVID_QA_Squadv2
+templates:
+  64ed14d6-c835-424d-a55d-ded1b1bd2546: !Template
+    answer_choices: null
+    id: 64ed14d6-c835-424d-a55d-ded1b1bd2546
+    jinja: '{{context}}
+
+
+      Generate a question from the above passage : ||| {{question}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: false
+    name: given_context_generate_question
+    reference: ''

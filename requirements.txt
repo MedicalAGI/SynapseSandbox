@@ -1,0 +1,5 @@
+promptsource==0.2.3
+easydict==1.9
+fastapi==0.79.0
+uvicorn[standard]==0.18.2
+pylru==1.2.1

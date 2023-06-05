@@ -1,0 +1,14 @@
+dataset: pico
+templates:
+  98534347-fff7-4c39-a795-4e69a44791f7: !Template
+    answer_choices: lower ||| no_difference  ||| higher
+    id: 98534347-fff7-4c39-a795-4e69a44791f7
+    jinja: "{{passage}} \n\nWhich relation of I/O and I/C would this passage likely\
+      \ appear in? ||| \n{{answer_choices[label] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: which_section
+    reference: ''

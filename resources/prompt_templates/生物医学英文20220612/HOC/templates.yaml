@@ -1,0 +1,15 @@
+dataset: hoc
+templates:
+  041ffdd5-88b0-41df-9e22-8c7a7bc0ce24: !Template
+    answer_choices: null
+    id: 041ffdd5-88b0-41df-9e22-8c7a7bc0ce24
+    jinja: "After reading:\n\n {{senetnce }}\nWhat is the keyword label for it? \n\
+      \ Label:\n ||| \n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: claim_label_generation_after_reading
+    reference: ''

@@ -1,0 +1,83 @@
+dataset: rewrite2
+templates:
+  11d1c505-9232-4c35-82a4-4c3642843e7d: !Template
+    answer_choices: null
+    id: 11d1c505-9232-4c35-82a4-4c3642843e7d
+    jinja: '
+      
+      患者询问 : {{ query }}
+      
+      请给出该询问的改写查询语句:
+
+      ||| 
+      
+      {{ rewrite }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: rewrite_query
+    reference: ''
+  228fcae7-7f4c-4e3c-9ac4-e49b26bc107x: !Template
+    answer_choices: null
+    id: 228fcae7-7f4c-4e3c-9ac4-e49b26bc107x
+    jinja: '
+      
+      对患者的话"{{query}}"
+      
+      给出合理的改写:
+
+      ||| 
+      
+      {{rewrite}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: give_query_rewrite
+  6dd74cd5-e074-4612-9e96-c17ca88c3bc1: !Template
+    answer_choices: null
+    id: 6dd74cd5-e074-4612-9e96-c17ca88c3bc1
+    jinja: '
+      
+      对患者提问"{{query}}"给出改写？
+      
+      |||
+      
+      {{ rewrite}}
+      '
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: for_query_rewrte
+    reference: ''
+  6dd74cd5-e074-4612-9e96-c17ca88c3bc7: !Template
+    answer_choices: null
+    id: 6dd74cd5-e074-4612-9e96-c17ca88c3bc7
+    jinja: '
+      
+      语句 : {{query}}
+      
+      问题 : 请给出该语句的重写查询语句？
+      
+      |||
+      {{rewrite}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: rewrite_for_query
+    reference: ''

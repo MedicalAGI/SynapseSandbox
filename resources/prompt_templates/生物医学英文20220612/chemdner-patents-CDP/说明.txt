@@ -1,0 +1,3 @@
+Title of the patent   对应 title
+Abstract of the patent 对应 abstract
+Manual classification 对应 label

@@ -1,0 +1,5 @@
+pmidtext 对应的是pmid的文本
+mi_id_name 对应的是pmid的MI ID的name
+
+def 为psi-mi25.obo的def
+synonym 为psi-mi25.obo的synonym  如果存在

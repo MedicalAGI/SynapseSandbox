@@ -1,0 +1,1 @@
+当作只有一种entity 类型的ner处理，参考ncbi_disease

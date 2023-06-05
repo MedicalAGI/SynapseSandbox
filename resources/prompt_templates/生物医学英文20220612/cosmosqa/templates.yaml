@@ -1,0 +1,13 @@
+dataset: cosmos_qa
+templates:
+  e640e365-091c-491e-a87e-f529514607e5: !Template
+    answer_choices: '{{answer0}} ||| {{answer1}} ||| {{answer2}} ||| {{answer3}}'
+    id: e640e365-091c-491e-a87e-f529514607e5
+    jinja: "{{question}} \n|||\n{{ answer_choices[label] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: false
+    name: only_question_answer
+    reference: Template with only question and generates the answer

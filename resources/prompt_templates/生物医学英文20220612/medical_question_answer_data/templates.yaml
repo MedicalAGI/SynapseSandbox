@@ -1,0 +1,13 @@
+dataset: medical_question_answer
+templates:
+  1e1d0ce1-b0ea-4ad8-9971-b2b44948123b: !Template
+    answer_choices: null
+    id: 1e1d0ce1-b0ea-4ad8-9971-b2b44948123b
+    jinja: 'Answer the following question: Q:{{question}} ||| {{answer }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: answer_given_question
+    reference: ''

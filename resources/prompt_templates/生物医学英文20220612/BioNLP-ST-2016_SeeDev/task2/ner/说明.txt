@@ -1,0 +1,5 @@
+ner数据有16种 'Protein', 'Genotype', 'Environmental_Factor', 'Protein_Family',
+ 'Promoter', 'Regulatory_Network', 'Protein_Complex', 
+'Tissue', 'Pathway', 'Hormone', 'Development_Phase', 
+'Protein_Domain', 'Box', 'Gene', 'RNA', 'Gene_Family'实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成16个的tokens,label的数据

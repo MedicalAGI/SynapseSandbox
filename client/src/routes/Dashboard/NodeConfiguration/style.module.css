@@ -1,0 +1,18 @@
+.root {
+  padding-top: 4px;
+  min-height: 480px;
+}
+
+.drawer {
+  margin-right: 300px;
+}
+
+.modal {
+  & :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+
+  & :global(.ant-modal-footer) {
+    border-top: none;
+  }
+}

@@ -1,0 +1,56 @@
+dataset: toadexport7
+templates:
+  00f58886-e04a-4efb-bf41-cfcbd00a5e7d: !Template
+    answer_choices: null
+    id: 00f58886-e04a-4efb-bf41-cfcbd00a5e7d
+    jinja: "\u4EE5\u4E0B\u662F\u4E2A\u533B\u5B66\u95EE\u9898\n\n\u56DE\u7B54 \u8FD9\
+      \u4E2A\u95EE\u9898: \"{{question_content}}\" \n||| \n{{dg_content}}\n"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: type_question_answer
+    reference: ''
+  45cb344c-bb36-492a-ace0-7cfc897e727b: !Template
+    answer_choices: null
+    id: 45cb344c-bb36-492a-ace0-7cfc897e727b
+    jinja: " \u60A3\u8005\u54A8\u8BE2\u4E86\u4E2A\u533B\u5B66\u95EE\u9898\n\n\u95EE\
+      \u9898 : {{question_content}}\n\n\u533B\u751F\u7684\u56DE\u590D :||| {{dg_content}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      - Other
+      original_task: true
+    name: patient_ask_qa
+    reference: ''
+  48ee58bb-6a4a-4667-9d9c-69618408c7dj: !Template
+    answer_choices: null
+    id: 48ee58bb-6a4a-4667-9d9c-69618408c7dj
+    jinja: "\u8FD9\u662F\u60A3\u8005\u5728\u7EBF\u54A8\u8BE2\u533B\u751F\u7684\u95EE\
+      \u9898 {{ question_content }}\n\u533B\u751F\u7684\u56DE\u590D\u662F\n|||\n{{dg_content}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: question_answer_online
+    reference: ''
+  48ee58bb-6a4a-4667-9d9c-69618408c7dx: !Template
+    answer_choices: null
+    id: 48ee58bb-6a4a-4667-9d9c-69618408c7dx
+    jinja: " \u54A8\u8BE2\u7684\u95EE\u9898\u662F\u4EC0\u4E48?\n{{question_content}}\n\
+      \u56DE\u590D :|||\n{{dg_content}} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: Generate_answer_to_question
+    reference: ''

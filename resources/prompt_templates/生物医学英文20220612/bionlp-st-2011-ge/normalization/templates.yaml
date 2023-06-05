@@ -1,0 +1,95 @@
+dataset: bionlp_ost_2011_ge
+subset: normalization
+templates:
+  06719321-62e7-4f6e-8f95-464cd2b5ca5c: !Template
+    answer_choices: null
+    id: 06719321-62e7-4f6e-8f95-464cd2b5ca5c
+    jinja: 'protein raw name
+
+      word : {{word}}
+
+      The regularized protein name for this word is?
+
+      |||
+
+      {{normalized}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: normalized_word_is
+    reference: 'Metrics:  F1,ROUGE'
+  0beba048-f949-4034-83b6-a3e0e7363f46: !Template
+    answer_choices: null
+    id: 0beba048-f949-4034-83b6-a3e0e7363f46
+    jinja: 'What is the normalized name of the following protein?
+
+
+      {{word}} |||
+
+      {{normalized}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: what_is_normalized
+    reference: 'Metrics:  F1,ROUGE'
+  1af36463-8ed9-4574-9157-f029960e1d5e: !Template
+    answer_choices: null
+    id: 1af36463-8ed9-4574-9157-f029960e1d5e
+    jinja: 'word : {{word}}
+
+      normalized :
+
+      |||
+
+      {{normalized}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: prompt_normalized
+    reference: 'Metrics:  F1,ROUGE'
+  461efe04-6883-41e8-80f0-e722a75260fe: !Template
+    answer_choices: null
+    id: 461efe04-6883-41e8-80f0-e722a75260fe
+    jinja: 'I want to know the normalized name of the following protein?
+
+      name : {{word}}
+
+      |||
+
+      {{normalized}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: want_to_know_normalized
+    reference: 'Metrics:  F1,ROUGE'
+  5fa16d31-b513-480d-bd1b-1fa8c182fb76: !Template
+    answer_choices: null
+    id: 5fa16d31-b513-480d-bd1b-1fa8c182fb76
+    jinja: '"{{word}}"Given a raw protein  name above
+
+      please give its normalized results
+
+
+      |||
+
+      {{normalized}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: give_normalized_word
+    reference: 'Metrics:  F1,ROUGE'

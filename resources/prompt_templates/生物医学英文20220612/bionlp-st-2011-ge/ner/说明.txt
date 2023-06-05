@@ -1,0 +1,2 @@
+ner数据有1种 'Protein'实体类型
+参考promptsource的ncbi_disease，也就是把一个数据做成1个的tokens,label的数据

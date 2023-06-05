@@ -1,0 +1,71 @@
+dataset: toadexport
+templates:
+  13c02904-e4e2-4b4f-b115-44b437d22041: !Template
+    answer_choices: null
+    id: 13c02904-e4e2-4b4f-b115-44b437d22041
+    jinja: "\n\u75C5\u4F8B:\n{{jianjie}}\n===\n\n\u8BF7\u95EE\u75C5\u4F8B\u63CF\u8FF0\
+      \u7684\u75BE\u75C5\u662F : ||| {{key_diseas}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: disease_for_content
+    reference: ''
+  30292806-8e58-463c-8d92-ba525411c6fa: !Template
+    answer_choices: null
+    id: 30292806-8e58-463c-8d92-ba525411c6fa
+    jinja: "\n\u75C5\u4F8B:\n{{jianjie}}\n===\n\n\u6839\u636E\u75C5\u4F8B\u751F\u6210\
+      \u6807\u9898 : ||| {{binli_name}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: generate_question
+    reference: ''
+  3d388a1e-3361-407b-baa7-61397cc58382: !Template
+    answer_choices: null
+    id: 3d388a1e-3361-407b-baa7-61397cc58382
+    jinja: "\u9605\u8BFB\u4EE5\u4E0B\u75C5\u4F8B\n{{jianjie}}\n\u63A8\u65AD\u63CF\u8FF0\
+      \u7684\u75BE\u75C5:\n|||\n{{key_diseas}} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: infer_disease
+    reference: null
+  57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3: !Template
+    answer_choices: null
+    id: 57a7a3f1-91f8-4f4b-b72d-745d7cb7b1e3
+    jinja: "\n{{jianjie}}\n\u7528\u4E00\u4E2A\u75BE\u75C5\u540D\u79F0\u603B\u7ED3\u4EE5\
+      \u4E0A\u75C5\u4F8B ||| {{key_diseas}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: conclude_a_disease
+    reference: ''
+  65a3c419-57e9-48c2-b090-0c5d7adb23c6: !Template
+    answer_choices: null
+    id: 65a3c419-57e9-48c2-b090-0c5d7adb23c6
+    jinja: "\u751F\u6210\u75C5\u4F8B\u6807\u9898\n{{jianjie}}\n|||\n{{binli_name}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: get_a_name
+    reference: ''

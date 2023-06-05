@@ -1,0 +1,44 @@
+dataset: chip_cdn
+templates:
+  41f28b31-d0fc-4f20-a0a2-ff21813e298e: !Template
+    answer_choices: null
+    id: 41f28b31-d0fc-4f20-a0a2-ff21813e298e
+    jinja: " \"{{text}}\" \u5DF2\u7ECF\u77E5\u9053\u4E00\u4E2A\u4E34\u5E8A\u8BCD\u8BED\
+      . \u90A3\u4E48\u5B83\u7684\u6807\u51C6\u5316\u8BCD\u8BED\u662F\u4EC0\u4E48?|||{{normalized_result}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Accuracy
+      original_task: true
+    name: normalized_result_for
+    reference: ''
+  a64d5a15-68e2-4d1c-b30a-ca8250c860d9: !Template
+    answer_choices: null
+    id: a64d5a15-68e2-4d1c-b30a-ca8250c860d9
+    jinja: " \u7ED9\u51FA\u539F\u59CB\u7684\u4E34\u5E8A\u7528\u8BED\n\n\"{{text}}\"\
+      ,\n\n\u8BF7\u5199\u51FA\u5B83\u7684\u6807\u51C6\u5316\u4E34\u5E8A\u77ED\u8BED\
+      .\n|||\n{{normalized_result}} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Accuracy
+      original_task: true
+    name: give_normailized_word
+    reference: 'Input: QC, Output: Answer'
+  c7a80603-d610-4999-98a7-815b2f84592d: !Template
+    answer_choices: null
+    id: c7a80603-d610-4999-98a7-815b2f84592d
+    jinja: "\u6211\u60F3\u77E5\u9053\u8FD9\u4E2A\u4E34\u5E8A\u77ED\u8BED\u7684\u6807\
+      \u51C6\u5316\u77ED\u8BED\u662F\u4EC0\u4E48?\n{{text}}\n\n|||\n{{normalized_result}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: false
+    name: generate_normalized_result
+    reference: 'Input: Context, Output: Question (generate a question)'

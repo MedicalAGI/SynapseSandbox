@@ -1,0 +1,51 @@
+dataset: corona_nlp
+templates:
+  1fef2b36-3a19-4179-9b43-d67887cff299: !Template
+    answer_choices: null
+    id: 1fef2b36-3a19-4179-9b43-d67887cff299
+    jinja: 'In this exam, you need to pick the correct sentiment for the tweet of
+      covid19:
+
+
+      {{OriginalTweet}}
+
+
+      Possible choices: {{"Neutral, Positive, Extremely Negative, Negative,Extremely
+      Positive"}}
+
+      |||
+
+      {{Sentiment}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: sentiment_exam
+    reference: ''
+  6702e8cd-9764-4c88-86a9-046f84c98ef2: !Template
+    answer_choices: null
+    id: 6702e8cd-9764-4c88-86a9-046f84c98ef2
+    jinja: "What is the sentiment of the tweet of covid19?\n\n{{OriginalTweet}} \n\
+      \nPossible choices: {{\"Neutral, Positive, Extremely Negative, Negative,Extremely\
+      \ Positive\"}}\n|||\n{{Sentiment}}\n"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: sentiment_question
+    reference: ''
+  6c6c797c-9912-4778-906b-16f465941d16: !Template
+    answer_choices: null
+    id: 6c6c797c-9912-4778-906b-16f465941d16
+    jinja: "Task: Identify the sentiment of the tweet.\n\nTweet: {{OriginalTweet}}\n\
+      \nOptions: {{\"Neutral, Positive, Extremely Negative, Negative,Extremely Positive\"\
+      }} \n|||\n{{Sentiment}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: sentiment_task
+    reference: ''

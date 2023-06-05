@@ -1,0 +1,1 @@
+把所有实体词类型看成一种即可，参考promptsource的ncbi_disease

@@ -1,0 +1,50 @@
+dataset: statement_pos_neg_peerj
+templates:
+  24e44a81-a18a-42dd-a71c-5b31b2d2cb39: !Template
+    answer_choices: null
+    id: 24e44a81-a18a-42dd-a71c-5b31b2d2cb39
+    jinja: "What kind of emotion was expressed in this passage?\n{{Text}} ||| \n{{Final_Emotion\
+      \ }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_question_first
+    reference: ''
+  8fdc1056-1029-41a1-9c67-354fc2b8ceaf: !Template
+    answer_choices: Angry ||| Excited ||| Fear ||| Happy ||| Sad ||| Bored
+    id: 8fdc1056-1029-41a1-9c67-354fc2b8ceaf
+    jinja: "Is this emotion of description regarding {{\"Angry, Excited, Fear, or\
+      \ Happy or Sad or Bored\"}}?\n{{Text}} \n||| \n{{Final_Emotion }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_with_choices_question_first
+    reference: ''
+  9345df33-4f23-4944-a33c-eef94e626862: !Template
+    answer_choices: null
+    id: 9345df33-4f23-4944-a33c-eef94e626862
+    jinja: "{{Text}} \n\nWhich of the atittute of a patitent to  this description\
+      \ likely appear in? {{\"Angry\"}}, {{\"Excited\"}}, {{\"Fear\"}}, or {{\"Happy\"\
+      }} or {{\"Sad\"}} or {{\"Bored\"}}? ||| \n{{ Final_Emotion}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: which_section_choices
+    reference: ''
+  cb355f33-7e8c-4455-a72b-48d315bd4f60: !Template
+    answer_choices: null
+    id: cb355f33-7e8c-4455-a72b-48d315bd4f60
+    jinja: "{{Text}} \nWhat label best describes this description? ||| \n{{Label }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify
+    reference: ''

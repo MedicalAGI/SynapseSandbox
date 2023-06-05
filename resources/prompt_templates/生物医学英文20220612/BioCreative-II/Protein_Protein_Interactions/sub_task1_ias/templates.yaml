@@ -1,0 +1,57 @@
+dataset: protein_protein_interactions
+subset: sub_task1_ias
+templates:
+  3df92937-de3f-45a4-8a8c-69bb78cb1a7b: !Template
+    answer_choices: no ||| yes
+    id: 3df92937-de3f-45a4-8a8c-69bb78cb1a7b
+    jinja: '"{{abstarct}}" reading the abstract of a paper above
+
+      is it related to protein interactions,yes or no?
+
+      |||
+
+      {{answer_choices[curation_relevance]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: yes_or_not_protein
+    reference: ''
+  4b6910ca-b857-4df1-b232-489bdb70f548: !Template
+    answer_choices: negative ||| positive
+    id: 4b6910ca-b857-4df1-b232-489bdb70f548
+    jinja: '{{abstract}}
+
+      and whether the relationship between content and protein interaction is positive
+      or negative?
+
+      |||
+
+      {{answer_choices[curation_relevance]}} '
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: whether_pos_neg
+    reference: ''
+  7712d4a0-9b25-4224-b062-31df61e892c1: !Template
+    answer_choices: no ||| yes
+    id: 7712d4a0-9b25-4224-b062-31df61e892c1
+    jinja: ' Whether the meaning of abstract is related to protein interaction?
+
+      abstract : {{abstract}}
+
+      yes or no?
+
+      |||
+
+      {{answer_choices[curation_relevance]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: is_it_related
+    reference: ''

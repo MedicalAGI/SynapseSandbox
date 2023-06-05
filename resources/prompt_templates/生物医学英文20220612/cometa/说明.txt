@@ -1,0 +1,2 @@
+word对应的是Specific SNOMED Label
+normalized对应的是 General SNOMED Label

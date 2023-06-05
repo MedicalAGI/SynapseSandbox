@@ -1,0 +1,31 @@
+dataset: biqa
+templates:
+  3d85b5b0-51db-4d72-8ead-d0b3654025ee: !Template
+    answer_choices: null
+    id: 3d85b5b0-51db-4d72-8ead-d0b3654025ee
+    jinja: 'Refer to the title below and  generate the following question:
+
+
+      Title: {{omtitle}}
+
+      |||
+
+      Question: {{question_text}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Squad
+      original_task: true
+    name: genrate_question_given_title
+    reference: ''
+  7c13b5ba-abfc-4b68-9a36-5430a0b0e580: !Template
+    answer_choices: null
+    id: 7c13b5ba-abfc-4b68-9a36-5430a0b0e580
+    jinja: "{{pmtitle}}\n\nWith reference to the above title ||| \n\n{{question_text}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Squad
+      original_task: true
+    name: ask_the_question
+    reference: ''

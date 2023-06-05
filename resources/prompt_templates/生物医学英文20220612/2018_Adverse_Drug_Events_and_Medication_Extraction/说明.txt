@@ -1,0 +1,2 @@
+arg1_id_text 指的是对应arg1_id所对应的text;
+arg2_id_text同理

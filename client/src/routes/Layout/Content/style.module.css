@@ -1,0 +1,11 @@
+.root {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+
+}
+
+.content {
+  margin: 0 auto;
+  height: 100%;
+}

@@ -1,0 +1,37 @@
+dataset: ebmsummariser
+templates:
+  3d85b5b0-51db-4d72-8ead-d0b3654025ee: !Template
+    answer_choices: null
+    id: 3d85b5b0-51db-4d72-8ead-d0b3654025ee
+    jinja: 'Refer to the following question and give your first answer in options:
+
+      Question: {{question}}
+
+      |||
+
+      {{answer["snip"][0]["sniptext"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: answer_first)question
+    reference: ''
+  5a3c2d11-9469-46f6-88c2-f7e159a9742b: !Template
+    answer_choices: null
+    id: 5a3c2d11-9469-46f6-88c2-f7e159a9742b
+    jinja: 'Refer to the following question and give your last answer in options:
+
+      Question: {{question}}
+
+      |||
+
+      {{answer["snip"][-1]["sniptext"]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Squad
+      original_task: true
+    name: given_last_answer
+    reference: ''

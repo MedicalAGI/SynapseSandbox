@@ -1,0 +1,50 @@
+dataset: kuake_qic
+templates:
+  2da087fe-8cca-4f92-b19c-babccb26a517: !Template
+    answer_choices: null
+    id: 2da087fe-8cca-4f92-b19c-babccb26a517
+    jinja: "{{query}}. \u6B64\u67E5\u8BE2\u8868\u793A\u7684\u67E5\u8BE2\u641C\u7D22\
+      \u610F\u56FE\u662F\u4EC0\u4E48?\n|||\n{{ label }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: query_intention
+    reference: ''
+  5fbc4f16-4f7f-4c82-b35d-6e68eced0c71: !Template
+    answer_choices: null
+    id: 5fbc4f16-4f7f-4c82-b35d-6e68eced0c71
+    jinja: "\u67E5\u8BE2 : {{query}}}\n\u6B64\u67E5\u8BE2\u7684\u641C\u7D22\u610F\u56FE\
+      \u662F\u4EC0\u4E48?|||\n{{ label }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: question_search_intention
+    reference: what is intention
+  7bbb7b75-47ca-4bc6-8537-5a3be683177a: !Template
+    answer_choices: null
+    id: 7bbb7b75-47ca-4bc6-8537-5a3be683177a
+    jinja: " \u4EE5\u4E0B\u67E5\u8BE2\u8868\u8FBE\u4E86\u4EC0\u4E48\u610F\u56FE? \n\
+      \ \u67E5\u8BE2:\n{{query}} \n ||| {{ label }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: what_is_query_intention
+    reference: direct basic emotions
+  a2c026ba-2b54-451b-84a0-b302f37bbabf: !Template
+    answer_choices: null
+    id: a2c026ba-2b54-451b-84a0-b302f37bbabf
+    jinja: "{{query}}\" \u8FD9\u662F\u60A3\u8005\u641C\u7D22\u7684\u67E5\u8BE2\u3002\
+      \u4ED6/\u5979\u610F\u56FE\u662F\u4EC0\u4E48?\\n  |||{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: patient_intention
+    reference: ''

@@ -1,0 +1,59 @@
+dataset: sciencedaily
+subset: related_terms
+templates:
+  375b86a3-a869-4473-920c-c00ea789e943: !Template
+    answer_choices: null
+    id: 375b86a3-a869-4473-920c-c00ea789e943
+    jinja: 'Reading the following content :
+
+
+      {{main_word}}
+
+
+      What is the related terms of this text
+
+      |||
+
+      {{related_term}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: related_term_in_content
+    reference: ''
+    task_template: true
+  749a5c3f-c10e-4a4a-aa35-d31698bb1104: !Template
+    answer_choices: null
+    id: 749a5c3f-c10e-4a4a-aa35-d31698bb1104
+    jinja: '{{main_word}}\nBased on your understanding of the above, please list the
+      relevant items ||| {{related_term}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: related_above
+    reference: ''
+    task_template: true
+  e4f4e194-a78b-433b-ac48-dabf6244be35: !Template
+    answer_choices: null
+    id: e4f4e194-a78b-433b-ac48-dabf6244be35
+    jinja: 'Which terms are the most related to the content that follows?
+
+
+      {{main_word}}
+
+
+      ||| {{related_term}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: which_related_terms
+    reference: ''
+    task_template: true

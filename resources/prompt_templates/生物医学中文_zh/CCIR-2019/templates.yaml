@@ -1,0 +1,14 @@
+dataset: ccir_2019
+templates:
+  992d541f-9e0c-466d-b4c4-92e9e236f863: !Template
+    answer_choices: null
+    id: 992d541f-9e0c-466d-b4c4-92e9e236f863
+    jinja: "SQL\u67E5\u8BE2: {{sql}}\n\u7B54\u6848:\n|||\n{{answer}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: sql_query_answer
+    reference: ''

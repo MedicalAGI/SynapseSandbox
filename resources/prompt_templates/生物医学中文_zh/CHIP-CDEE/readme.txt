@@ -1,0 +1,1 @@
+把core_name,character,anatomy_list里面的作为entities，提及的实体都当作一种实体词即可

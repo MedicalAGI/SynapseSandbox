@@ -1,0 +1,17 @@
+.root {
+  margin-bottom: 16px;
+
+  & :global(.ant-card-head) {
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 24px;
+  }
+
+  & :global(.ant-card-body) {
+    padding: 16px;
+  }
+
+  & :global(.ant-card-head .ant-card-head-title) {
+    padding-bottom: 16px;
+  }
+}

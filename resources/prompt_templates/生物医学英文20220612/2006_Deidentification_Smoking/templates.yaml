@@ -1,0 +1,63 @@
+dataset: n2c2_2006_smokers
+templates:
+  24e44a81-a18a-42dd-a71c-5b31b2d2cb39: !Template
+    answer_choices: null
+    id: 24e44a81-a18a-42dd-a71c-5b31b2d2cb39
+    jinja: "Can this text report speculate on the current status of smokers?\n{{TEXT}}\
+      \ ||| \n{{ SMOKING }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_smoking
+    reference: ''
+  8fdc1056-1029-41a1-9c67-354fc2b8ceaf: !Template
+    answer_choices: null
+    id: 8fdc1056-1029-41a1-9c67-354fc2b8ceaf
+    jinja: "I received a text. The question is that let me guess what the state of\
+      \ smokers described in this text is?\n{{TEXT}} \n Answer: \n||| \n{{ SMOKING\
+      \ }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: guess_smoking
+    reference: ''
+  918267e0-af68-4117-892d-2dbe66a58ce9: !Template
+    answer_choices: null
+    id: 918267e0-af68-4117-892d-2dbe66a58ce9
+    jinja: '{{TEXT}}\nRead the above report and give a conclusion about the current
+      status of smokers
+
+      Conclusion :
+
+      |||
+
+      {{SMOKING}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: smoker_conclusion
+    reference: ''
+  9345df33-4f23-4944-a33c-eef94e626862: !Template
+    answer_choices: null
+    id: 9345df33-4f23-4944-a33c-eef94e626862
+    jinja: 'This is a text that my friend asked me to help me guess the smoking status
+      of the reported person
+
+      report : {{TEXT}}
+
+      |||
+
+      {{SMOKING }}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: friend_ask_for_me
+    reference: ''

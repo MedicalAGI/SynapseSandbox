@@ -1,0 +1,2 @@
+*.a1   是  记录entity的信息
+*.rel   是  记录relation的信息

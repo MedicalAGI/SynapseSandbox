@@ -1,0 +1,6 @@
+ner的一共有['Var', 'Gene', 'Reg', 'Disease', 'NegReg', 'PosReg', 'MPA', 'CPA', 'Interaction', 'Protein', 'Pathway', 'Enzyme']
+12个entity type，参考ner-data的JNLPBA，也就是把一个数据做成12个的tokens,label的数据
+
+
+
+数据中的denotations就是ner的注释

@@ -1,0 +1,11 @@
+body {
+  margin             : 0;
+  padding            : 0;
+  overscroll-behavior: none;
+  background: url('~assets/background.png') #f5f7f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}

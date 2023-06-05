@@ -1,0 +1,43 @@
+dataset: yidu_n7k
+templates:
+  41f28b31-d0fc-4f20-a0a2-ff21813e298e: !Template
+    answer_choices: null
+    id: 41f28b31-d0fc-4f20-a0a2-ff21813e298e
+    jinja: " \"{{raw_word}}\" \u5DF2\u77E5\u533B\u5B66\u8BCD\u8BED. \u5B83\u7684\u6807\
+      \u51C6\u5316\u8BCD\u8BED\u662F?|||{{normalized_word}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Accuracy
+      original_task: true
+    name: normalized_word_for
+    reference: ''
+  a64d5a15-68e2-4d1c-b30a-ca8250c860d9: !Template
+    answer_choices: null
+    id: a64d5a15-68e2-4d1c-b30a-ca8250c860d9
+    jinja: " \u7ED9\u51FA\u4EE5\u4E0B\u533B\u5B66\u8BCD\u8BED\n\n\"{{raw_word}}\"\
+      ,\n\n\u8BF7\u5199\u51FA\u5B83\u7684\u6807\u51C6\u5316\u8BCD\u8BED.\n|||\n{{normalized_word}} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Accuracy
+      original_task: true
+    name: give_normailized_word
+    reference: ''
+  c7a80603-d610-4999-98a7-815b2f84592d: !Template
+    answer_choices: null
+    id: c7a80603-d610-4999-98a7-815b2f84592d
+    jinja: "\u6211\u60F3\u77E5\u9053\u8FD9\u4E2A\u533B\u5B66\u77ED\u8BED\u7684\u89C4\
+      \u8303\u5316\u77ED\u8BED\u662F\u4EC0\u4E48?\n{{raw_word}}\n\n|||\n{{normalized_word}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: false
+    name: generate_normalized_word
+    reference: ''

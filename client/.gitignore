@@ -1,0 +1,16 @@
+logs
+*.log
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.DS_Store
+
+packages/*/dist/
+packages/*/lib/
+
+# piple build
+*-yangl.tar.gz
+proxy.conf.js
+dist/

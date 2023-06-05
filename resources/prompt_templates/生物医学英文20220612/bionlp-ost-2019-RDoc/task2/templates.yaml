@@ -1,0 +1,16 @@
+dataset: bionlp_ost_2019_rdoc
+subset: task2
+templates:
+  8fdc1056-1029-41a1-9c67-354fc2b8ceaf: !Template
+    answer_choices: null
+    id: 8fdc1056-1029-41a1-9c67-354fc2b8ceaf
+    jinja: "Is this a piece of mental health abstract regarding {{\"Acute_Threat_Fear,\
+      \ Arousal, Circadian_Rhythms,Frustrative_Nonreward, Loss, Potential_Threat_Anxiety\
+      \ ,Sleep_Wakefulness or Sustained_Threat\"}}?\n{{text}} \n||| \n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_with_choices_question_first
+    reference: ''

@@ -1,0 +1,12 @@
+https://github.com/bigscience-workshop/biomedical/blob/master/bigbio/biodatasets/n2c2_2011/n2c2_2011.py
+使用load_dataset("filename","n2c2_2011_bigbio_kb")读取
+
+entity_text 对应的是 {'id': 'clinical-87-entity-train-15-0-15-4', 'type': 'problem', 'text': ['METASTATIC ADENOCARCINOMA OF UNKNOWN PRIMARY'], 'offsets': [[175, 219]], 'normalized': []} 里面的text
+
+
+coreferences 原本是这样子的
+{'id': 'clinical-87-coref-0', 'entity_ids': ['clinical-87-entity-train-15-0-15-4', 'clinical-87-entity-train-22-19-22-24', 'clinical-87-entity-train-31-6-31-8', 'clinical-87-entity-train-32-0-32-0', 'clinical-87-entity-train-37-16-37-16', 'clinical-87-entity-train-111-5-111-7', 'clinical-87-entity-train-111-8-111-8']}
+
+
+希望变成
+{'id': 'clinical-87-coref-0', 'entity_ids_text': ['text1', 'text2',...]}

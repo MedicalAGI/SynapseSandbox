@@ -1,0 +1,6 @@
+肿瘤原发部位  对应 site_of_tumor
+原发病灶大小  对应 lesion_size
+转移部位      对应 metastatic_site
+原文          对应 text
+
+先将NAN转换为""

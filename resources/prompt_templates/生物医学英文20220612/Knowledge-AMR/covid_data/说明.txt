@@ -1,0 +1,1 @@
+做ner，在数据的entity_mentions中，把所有实体当做一种类型即可，参考ncbi_disease

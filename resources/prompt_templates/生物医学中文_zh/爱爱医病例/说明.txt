@@ -1,0 +1,3 @@
+病例内容  对应 content
+关键疾病  对应 disease
+标题      对应 title

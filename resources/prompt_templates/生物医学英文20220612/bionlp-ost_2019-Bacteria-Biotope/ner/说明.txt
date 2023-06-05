@@ -1,0 +1,2 @@
+ner数据有4种 Microorganism, Habitat, Geographical, Phenotype  实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成4个的tokens,label的数据

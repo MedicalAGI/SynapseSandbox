@@ -1,0 +1,2 @@
+ner数据有5种 'Organism', 'Protein', 'Two-component-system', 'Chemical', 'Regulon-operon'实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成1个的tokens,label的数据

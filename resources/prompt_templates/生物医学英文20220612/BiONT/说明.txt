@@ -1,0 +1,5 @@
+e1_text 对应@e1 所对应的文本
+e2_text 对应@e2 所对应的文本
+
+ddi对应@ddi
+text 对应@text

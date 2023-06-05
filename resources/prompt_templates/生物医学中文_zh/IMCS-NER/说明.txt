@@ -1,0 +1,5 @@
+里面的"BIO_label"记录label信息
+
+实体类型有5类Symptom，Drug，Drug_Category,Medical_Examination，Operation
+
+与之前的一样，把对话拆成一句一句的，然后一个句子衍生5个label（对应5种实体）

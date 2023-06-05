@@ -1,0 +1,121 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true
+  },
+  "extends": [
+      "standard",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended"
+  ],
+  "globals": {
+      "__SERVER_ENV__": "readonly",
+      "__APP_VERSION__": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint",
+      "react-hooks",
+      "import",
+      "jest"
+  ],
+  "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"]
+      },
+      "import/resolver": {
+        "typescript": {}
+      },
+      "react": {
+        "version": "detect"
+      }
+    },
+  "rules": {
+      "import/order": ["error", {
+          "newlines-between": "always"
+      }],
+      "quotes": ["error", "single"],
+      "jsx-quotes": ["error", "prefer-single"],
+      // "standard/no-callback-literal": ["warn", ["cb", "callback"]],
+      "no-unused-vars": ["error", { "varsIgnorePattern": "^_" }],
+      "no-useless-constructor": "off",
+      "@typescript-eslint/no-useless-constructor": ["error"],
+      "@typescript-eslint/camelcase": ["off"],
+      // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "default",
+          "format": ["camelCase"],
+          "filter": {
+            "regex": "[.|0-9]",
+            "match": false
+          }
+        },
+        {
+          "selector": "parameter",
+          "format": ["camelCase", "PascalCase"],
+          "leadingUnderscore": "allow"
+        },
+        {
+          "selector": "property",
+          "format": ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
+          "filter": {
+            "regex": "[.|0-9]",
+            "match": false
+          }
+        },
+        {
+          "selector": "variable",
+          "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+        },
+        {
+          "selector": "function",
+          "format": ["camelCase", "PascalCase"]
+        },
+        {
+          "selector": "memberLike",
+          "modifiers": ["private"],
+          "format": ["camelCase"],
+          "leadingUnderscore": "require"
+        },
+        {
+          "selector": "typeLike",
+          "format": ["PascalCase", "UPPER_CASE"]
+        },
+        {
+          "selector": "interface",
+          "format": ["PascalCase"],
+          "custom": {
+            "regex": "^I[A-Z]",
+            "match": true
+          }
+        }
+      ],
+      // "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/member-delimiter-style": ["error", {
+          "multiline": {
+              "delimiter": "none",
+              "requireLast": false
+          },
+          "singleline": {
+              "delimiter": "semi",
+              "requireLast": false
+          }
+      }],
+      "@typescript-eslint/no-unused-vars": [1, { "varsIgnorePattern": "^_" }],
+      "react/prop-types": ["off"],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+  }
+}

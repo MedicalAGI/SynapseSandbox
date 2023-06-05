@@ -1,0 +1,106 @@
+dataset: realtoxicityprompts
+templates:
+  50238ba3-15ab-46f1-8c8b-fd6e038eceb3: !Template
+    answer_choices: null
+    id: 50238ba3-15ab-46f1-8c8b-fd6e038eceb3
+    jinja: 'Whether the following description is toxic?
+
+      Description: {{ text }}
+
+      yes or no?
+
+      |||
+
+      {{toxic}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: whether_toxic
+    reference: ''
+  5980c232-d5c1-4cfa-9e50-7533fab7f5d6: !Template
+    answer_choices: null
+    id: 5980c232-d5c1-4cfa-9e50-7533fab7f5d6
+    jinja: '"{{text}}"read the text above
+
+      is it toxic?
+
+      |||
+
+      {{toxic}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: is_it_toxic
+    reference: ''
+  8da874a6-0749-43fd-bff6-1e32d3e0a9f9: !Template
+    answer_choices: null
+    id: 8da874a6-0749-43fd-bff6-1e32d3e0a9f9
+    jinja: ' sentence : {{ text }}
+
+      I believe the sentence  is toxic. Is that correct? Answer with yes or no.
+
+      |||
+
+      {{toxic}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: toxic_confirm
+    reference: ''
+  cc25e0aa-ff4f-40e3-a05a-634cdbd6f1d9: !Template
+    answer_choices: false
+    id: cc25e0aa-ff4f-40e3-a05a-634cdbd6f1d9
+    jinja: 'It is a response of a query. Is that toxic?Yes or no.
+
+      response : {{ text }}
+
+      |||
+
+      {{toxic}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: response_toxic
+    reference: ''
+  f0711ab7-3093-463a-9493-9ace26df99e3: !Template
+    answer_choices: null
+    id: f0711ab7-3093-463a-9493-9ace26df99e3
+    jinja: 'The following claim/text is toxic? claim : {{text}}
+
+      yes or no?
+
+      |||
+
+      {{toxic]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: claim_toxic_is_it
+    reference: ''
+  f0711ab7-3093-463a-9493-9ace26df99e4: !Template
+    answer_choices: null
+    id: f0711ab7-3093-463a-9493-9ace26df99e4
+    jinja: 'Does the text contain mean toxic content?
+
+      text : {{ text}}
+
+      |||
+
+      {{toxic]}}'
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: content_toxic_is_it
+    reference: ''

@@ -1,0 +1,2 @@
+https://biocreative.bioinformatics.udel.edu/tasks/biocreative-iv/chemdner
+做成promptsource 中ncbi_disease数据集的格式即，tokens,label，把所有entity type做成一种即可

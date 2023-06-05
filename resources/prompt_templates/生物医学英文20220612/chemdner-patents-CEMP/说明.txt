@@ -1,0 +1,2 @@
+﻿ner数据7种 abbreviation,family,formula,identifiers,multiple,systematic,trivial实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成7个的tokens,label的数据

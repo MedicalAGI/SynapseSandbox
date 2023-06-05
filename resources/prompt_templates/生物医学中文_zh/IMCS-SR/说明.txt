@@ -1,0 +1,1 @@
+将一个对话的dialogue拆成一句一句的text，每一句都对应一个symptom_norm，speaker（医生或者患者)

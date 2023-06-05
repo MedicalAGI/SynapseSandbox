@@ -1,0 +1,2 @@
+﻿ner数据有11种 ,chebi,cl,go_bp,go_cc,go_mf,mondo,mop,ncbitaxon,pr,so,uberon实体类型
+参考ner-data的JNLPBA，也就是把一个数据做成11个的tokens,label的数据

@@ -1,0 +1,1 @@
+只考虑ner任务，把数据变成ncbi_disease的格式，不考虑entity 类型，都看作一个类型即可 

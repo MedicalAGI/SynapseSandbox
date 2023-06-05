@@ -1,0 +1,17 @@
+dataset: chimed
+templates:
+  0b5bab65-4109-4a80-91fd-f26af330b558: !Template
+    answer_choices: null
+    id: 0b5bab65-4109-4a80-91fd-f26af330b558
+    jinja: "\u4ECA\u5929\u6211\u95EE\u4E86\u4E00\u4E2A\u533B\u751F\u670B\u53CB\u4E00\
+      \u4E2A\u95EE\u9898\n\n\u95EE\u9898 : {{question}}\n\n\u4ED6\u7684\u56DE\u590D\
+      \u662F : \n ||| {{answer_1}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - ROUGE
+      - BLEU
+      - Other
+      original_task: true
+    name: ask_friend_question
+    reference: Given  question, generate answer.

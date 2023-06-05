@@ -1,0 +1,10 @@
+1.Acute Threat Fear
+2.Loss
+3.Arousal
+4.Circadian_Rhythms
+5.Frustrative_Nonreward
+6.Potential_Threat_Anxiety
+7.Sleep_Wakefulness
+8.Sustained_Threat
+
+有八个RDOC类型的数据

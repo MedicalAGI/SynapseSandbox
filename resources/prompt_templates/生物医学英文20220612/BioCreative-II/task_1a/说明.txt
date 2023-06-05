@@ -1,0 +1,1 @@
+做成token，label的形式（跟promptsource的ncbi_disease格式一样）

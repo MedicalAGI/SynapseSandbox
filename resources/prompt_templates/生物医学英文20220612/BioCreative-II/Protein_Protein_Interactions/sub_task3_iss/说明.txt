@@ -1,0 +1,2 @@
+article是PMID对应的文档
+snetence对应相关的Protein Interaction Sentences

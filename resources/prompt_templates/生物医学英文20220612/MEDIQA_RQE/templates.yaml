@@ -1,0 +1,26 @@
+dataset: mediqa_rqe
+templates:
+  2c780ebe-f8e6-44f0-a804-0a3e53eb8cce: !Template
+    answer_choices: null
+    id: 2c780ebe-f8e6-44f0-a804-0a3e53eb8cce
+    jinja: Given the question "{{chq}}" would you consider another similiar question
+      is:\n ||| {{faq}}
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: another_similar_question
+    reference: ''
+  3331355a-4d69-4060-ae9e-cdb951335ed2: !Template
+    answer_choices: No ||| Yes
+    id: 3331355a-4d69-4060-ae9e-cdb951335ed2
+    jinja: Read the follwing question"{{chq}}", please give another question that
+      is similar\n|||{{faq}}
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: are_two_questions_same
+    reference: ''

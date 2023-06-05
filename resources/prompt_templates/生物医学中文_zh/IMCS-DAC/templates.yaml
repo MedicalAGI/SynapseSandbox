@@ -1,0 +1,14 @@
+dataset: imcs_dac
+templates:
+  b917ab5b-3e33-48ee-a319-ccca6af58cd5: !Template
+    answer_choices: null
+    id: b917ab5b-3e33-48ee-a319-ccca6af58cd5
+    jinja: "\u54A8\u8BE2 : {{text}}\n\u610F\u56FE :\n|||\n{{dialogue_act}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: simple_intent
+    reference: ''

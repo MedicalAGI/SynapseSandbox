@@ -1,0 +1,38 @@
+dataset: chip_ctc
+templates:
+  24e44a81-a18a-42dd-a71c-5b31b2d2cb33: !Template
+    answer_choices: null
+    id: 24e44a81-a18a-42dd-a71c-5b31b2d2cb33
+    jinja: "\u672C\u6587\u4E2D\u63CF\u8FF0\u7684\u4E34\u5E8A\u4E8B\u4EF6\u7684\u7C7B\
+      \u522B\u662F\u4EC0\u4E48\uFF1F\n{{text}}\n||| {{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_text
+    reference: ''
+  8fdc1056-1029-41a1-9c67-354fc2b8ceag: !Template
+    answer_choices: null
+    id: 8fdc1056-1029-41a1-9c67-354fc2b8ceag
+    jinja: "\"{{text}}\" \u9605\u8BFB\u4E34\u5E8A\u6587\u672C\u5E76\u5224\u65AD\u6587\
+      \u672C\u7C7B\u578B \\n Label : \\n ||| {{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: judge_text_label
+    reference: ''
+  cb355f33-7e8c-4455-a72b-48d315bd4f67: !Template
+    answer_choices: null
+    id: cb355f33-7e8c-4455-a72b-48d315bd4f67
+    jinja: "{{text}} \n\u4EC0\u4E48\u7C7B\u578B\u6807\u7B7E\u6700\u80FD\u63CF\u8FF0\
+      \u8FD9\u79CD\u4E34\u5E8A\u63CF\u8FF0? ||| \n{{label }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify
+    reference: ''
