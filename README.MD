@@ -1,5 +1,5 @@
 # Prompt Synapse
-[synaspe](./logo.jpg)
+[./logo.jpg]
 ## TFServing
 ```bash
 # start tfserving
