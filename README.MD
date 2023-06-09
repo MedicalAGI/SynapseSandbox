@@ -1,6 +1,9 @@
 # Prompt Synapse
 ![synapse](./logo.jpg)
 ## TFServing
+
+### Prompt Flow Demo UI
+![ui](./prompt_ui.png)
 ```bash
 # start tfserving
 DEVICE=GPU NUM_REPLICA=2 NUM_GPU=2 GPU_ID_START=6 ./run.sh
