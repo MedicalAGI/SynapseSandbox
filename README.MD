@@ -1,5 +1,5 @@
 # Prompt Sandbox
-![synapse](./logo.jpg)
+![synapse](./logo2.png)
 ## TFServing
 
 ### Prompt Flow Demo UI
