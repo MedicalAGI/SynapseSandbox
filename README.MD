@@ -1,4 +1,4 @@
-# Prompt Synapse
+# Prompt Sandbox
 ![synapse](./logo.jpg)
 ## TFServing
 
